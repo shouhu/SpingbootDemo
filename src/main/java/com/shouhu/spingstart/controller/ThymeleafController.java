@@ -57,7 +57,6 @@ public class ThymeleafController {
 		userList.add(u2);
 		
 		map.addAttribute("userList", userList);
-		
         return "thymeleaf/test";
     }
 	
