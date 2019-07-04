@@ -26,8 +26,6 @@ public class Product {
 
     private Integer pflag;
 
-    private String cid;
-
     /**
      * @return pid
      */
@@ -152,19 +150,5 @@ public class Product {
      */
     public void setPflag(Integer pflag) {
         this.pflag = pflag;
-    }
-
-    /**
-     * @return cid
-     */
-    public String getCid() {
-        return cid;
-    }
-
-    /**
-     * @param cid
-     */
-    public void setCid(String cid) {
-        this.cid = cid;
     }
 }

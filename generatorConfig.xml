@@ -29,7 +29,7 @@
                              type="XMLMAPPER"/>
 
 
-		<table tableName="product"></table>
+		<table tableName="tb_user"></table>
 		 
     </context>
 </generatorConfiguration>
