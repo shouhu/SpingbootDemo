@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shouhu.spingstart.mapper.ProductMapper">
+  <resultMap id="BaseResultMap" type="com.shouhu.spingstart.pojo.Product">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pid" jdbcType="VARCHAR" property="pid" />
+    <result column="pname" jdbcType="VARCHAR" property="pname" />
+    <result column="market_price" jdbcType="DOUBLE" property="marketPrice" />
+    <result column="shop_price" jdbcType="DOUBLE" property="shopPrice" />
+    <result column="pimage" jdbcType="VARCHAR" property="pimage" />
+    <result column="pdate" jdbcType="DATE" property="pdate" />
+    <result column="is_hot" jdbcType="INTEGER" property="isHot" />
+    <result column="pdesc" jdbcType="VARCHAR" property="pdesc" />
+    <result column="pflag" jdbcType="INTEGER" property="pflag" />
+    <result column="cid" jdbcType="VARCHAR" property="cid" />
+  </resultMap>
+  <resultMap id="BaseResultMap" type="com.shouhu.spingstart.pojo.Product">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="pid" jdbcType="VARCHAR" property="pid" />
+    <result column="pname" jdbcType="VARCHAR" property="pname" />
+    <result column="market_price" jdbcType="DOUBLE" property="marketPrice" />
+    <result column="shop_price" jdbcType="DOUBLE" property="shopPrice" />
+    <result column="pimage" jdbcType="VARCHAR" property="pimage" />
+    <result column="pdate" jdbcType="DATE" property="pdate" />
+    <result column="is_hot" jdbcType="INTEGER" property="isHot" />
+    <result column="pdesc" jdbcType="VARCHAR" property="pdesc" />
+    <result column="pflag" jdbcType="INTEGER" property="pflag" />
+    <result column="cid" jdbcType="VARCHAR" property="cid" />
+  </resultMap>
+</mapper>
