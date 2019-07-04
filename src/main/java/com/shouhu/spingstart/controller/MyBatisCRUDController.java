@@ -3,6 +3,7 @@ package com.shouhu.spingstart.controller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import org.n3r.idworker.Sid;
 import org.slf4j.Logger;
@@ -36,37 +37,35 @@ public class MyBatisCRUDController {
 		
 		TbUser user = new TbUser();
 		user.setUid(userId);
-		user.setPassword("zxc" );
-		user.setName("123456" );
-		user.setTelephone("abc123");		
+		user.setPassword("zxc"+new Random().nextInt()+"" );
+		user.setName("123456"+new Random().nextInt()+"" );
+		user.setTelephone("abc123"+new Random().nextInt()+"");		
 		productService.saveProduct(user);
 		
 		return IMoocJSONResult.ok("保存成功");
 	}
 	
-//	@RequestMapping("/updateUser")
-//	public IMoocJSONResult updateUser() {
-//		
-//		SysUser user = new SysUser();
-//		user.setId("10011001");
-//		user.setUsername("10011001-updated" + new Date());
-//		user.setNickname("10011001-updated" + new Date());
-//		user.setPassword("10011001-updated");
-//		user.setIsDelete(0);
-//		user.setRegistTime(new Date());
-//		
-//		userService.updateUser(user);
-//		
-//		return IMoocJSONResult.ok("保存成功");
-//	}
+	@RequestMapping("/updateUser")
+	public IMoocJSONResult updateUser() {
+		
+		TbUser user = new TbUser();
+		user.setUid("190704GFG02K9680");
+		user.setPassword("zxcs" );
+		user.setName("123456ssss" );
+		user.setTelephone("assssbc123");	
+		
+		productService.updateProduct(user);
+		
+		return IMoocJSONResult.ok("保存成功");
+	}
 //	
-//	@RequestMapping("/deleteUser")
-//	public IMoocJSONResult deleteUser(String userId) {
-//		
-//		userService.deleteUser(userId);
-//		
-//		return IMoocJSONResult.ok("删除成功");
-//	}
+	@RequestMapping("/deleteUser")
+	public IMoocJSONResult deleteUser(String userId) {
+		
+		productService.deleteProduct("190704GMCCD720DP");
+		
+		return IMoocJSONResult.ok("删除成功");
+	}
 //	
 //	@RequestMapping("/queryUserById")
 //	public IMoocJSONResult queryUserById(String userId) {

@@ -9,11 +9,11 @@ public interface ProductService {
 	
 	public void saveProduct(TbUser user) throws Exception;
 
-//	public void updateProduct(Product user);
-//
-//	public void deleteProduct(String userId);
-//
-//	public Product queryProductById(String userId);
+	public void updateProduct(TbUser user);
+
+	public void deleteProduct(String userId);
+
+	public TbUser queryProductById(String userId);
 //
 //	public List<Product> queryProductList(Product user);
 //

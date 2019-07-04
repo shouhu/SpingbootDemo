@@ -31,47 +31,24 @@ public class ProductServiceImpl implements ProductService{
 //		
 		userMapper.insert(user);
 	}
-//
-//	@Override
-//	public void updateProduct(Product user) {
-//		// TODO Auto-generated method stub
-//		userMapper.insert(user);
-//	}
-//
-//	@Override
-//	public void deleteProduct(String userId) {
-//		// TODO Auto-generated method stub
-//		userMapper.deleteByPrimaryKey(userId);
-//	}
-//
-//	@Override
-//	public Product queryProductById(String userId) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	@Override
-//	public List<Product> queryProductList(Product user) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	@Override
-//	public List<Product> queryProductListPaged(Product user, Integer page, Integer pageSize) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	@Override
-//	public Product queryProductByIdCustom(String userId) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	@Override
-//	public void saveProductTransactional(Product user) {
-//		// TODO Auto-generated method stub
-//		
-//	}
+
+
+	@Override
+	public void updateProduct(TbUser user) {
+		// TODO Auto-generated method stub
+		userMapper.updateByPrimaryKeySelective(user);
+	}
+
+	@Override
+	public void deleteProduct(String userId) {
+		// TODO Auto-generated method stub
+		userMapper.deleteByPrimaryKey(userId);
+	}
+
+	@Override
+	public TbUser queryProductById(String userId) {
+		// TODO Auto-generated method stub
+		return userMapper.selectByPrimaryKey(userId);
+	}
 
 }
